@@ -1,2 +1,2 @@
-# screenplayPortfolio
-emily travo's professional screenplay portfolio repository
+# webDev Portfolio
+emily travo's professional web dev portfolio repository
