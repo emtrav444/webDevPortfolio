@@ -1,0 +1,12 @@
+/* GLOBAL LAYOUT SHELL */
+.globalLayoutShell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* GLOBAL LAYOUT CONTENT */
+.globalLayoutContent {
+  flex: 1;
+  width: 100%;
+}

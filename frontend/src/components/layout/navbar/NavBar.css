@@ -1,0 +1,35 @@
+/* NAV BAR WRAP */
+.navWrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+.navWrapper > :first-child {
+    justify-self: start;
+}
+
+.navWrapper > :last-child {
+    justify-self: end;
+}
+
+/* CENTRAL LOGO */
+.navLogo {
+    justify-self: center;
+}
+
+/* LINKS */
+.navLink {
+    text-decoration:none;
+    color:inherit;
+    font-size: 0.8rem;
+    letter-spacing: none;
+    text-transform: lowercase;
+}
+
+.navLink:hover {
+    opacity: 0.6;
+}

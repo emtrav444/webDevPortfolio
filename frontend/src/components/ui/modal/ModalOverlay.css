@@ -1,0 +1,25 @@
+/* MODAL OVERLAY */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MODAL CONTENT */
+.modalContent {
+  width: min(90vw, 520px);
+  min-height: 320px;
+}
+
+/* MODAL BUTTONS */
+.modalCancelButton {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
