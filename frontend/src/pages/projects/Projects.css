@@ -1,0 +1,64 @@
+/* PROJECT PAGE WRAPPER */
+.projectsPage {
+    width: 100%;
+}
+
+/* PROJECT PAGE: HEADER SECTION */
+.projectsHeader {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.projectsTitle {
+    font-size: clamp(3rem, 8wv, 6rem);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.projectsSubtitle {
+    margin-top: 8px;
+    font-size: clamp(0.7rem, 1.5wv, 0.75rem);
+    text-transform: uppercase;
+}
+
+/* PROJECT PAGE: CAROUSEL SECTION */
+.projectsCarouselSection {
+    padding-top: clamp(40px, 8vw, 90px);
+    padding-bottom: clamp(40px, 8vw, 80px);
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (max-width: 900px) {
+    .projectsHeader {
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+
+    .projectsCarouselSection {
+        padding-top: 48px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .projectsHeader {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    .projectsSubtitle {
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+
+    .projectsCarouselSection {
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
+}

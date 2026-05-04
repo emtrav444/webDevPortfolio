@@ -1,0 +1,66 @@
+/* CARD WRAP */
+.projectCard {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* CARD IMAGE */
+.projectCardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CARD BODY SECTIONS */
+.projectCardTitleSection,
+.projectCardDescSection,
+.projectCardTagsSection {
+  background-color: white;
+}
+
+/* CARD TITLE SECTION */
+.projectCardTitleSection {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.projectCardTitle {
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* CARD DESCRIPTION SECTION */
+.projectCardDescSection {
+  padding: 14px 44px;
+}
+
+.projectCardDesc {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* CARD TAGS SECTION */
+.projectCardTagsSection {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* CARD TAGS */
+.projectCardTag {
+  background-color: gray;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 4px 8px;
+}
+
+.projectCardTag:hover {
+  background-color: aliceblue;
+}
