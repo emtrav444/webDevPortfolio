@@ -1,0 +1,112 @@
+/* CONTACT FORM CONTAINER */
+.contactFormContainer {
+  width: min(90vw, 1050px);
+  min-height: 360px;
+}
+
+/* CONTACT FORM GRID */
+.contactGrid {
+  width: 100%;
+  min-height: 360px;
+  align-items: center;
+}
+
+/* CONTACT FORM: LEFT SIDE CONTENT */
+.contactLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTACT FORM: TITLE */
+.contactTitle {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 0.9;
+  margin: 0;
+}
+
+/* CONTACT FORM: SUBTITLE */
+.contactSubtitle {
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/* CONTACT FORM: RIGHT SIDE CONTENT */
+.contactRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTACT FORM: FORM STACK */
+.contactFormStack {
+  width: 100%;
+  max-width: 460px;
+  gap: 0.5rem;
+}
+
+/* CONTACT FORM: NAME & EMAIL GRID */
+.contactInputGrid {
+  width: 100%;
+}
+
+/* CONTACT FORM: FORM INPUTS */
+.contactFormStack input,
+.contactFormStack textarea {
+  font-size: 0.75rem;
+}
+
+/* CONTACT FORM: FORM LABELS */
+.contactFormStack label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* CONTACT FORM: BUTTONS */
+.contactFormStack button {
+  min-width: 120px;
+  height: 32px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .contactFormContainer {
+    width: min(92vw, 620px);
+  }
+
+  .contactGrid {
+    min-height: auto;
+    row-gap: 2rem;
+  }
+
+  .contactLeft,
+  .contactRight {
+    justify-content: center;
+  }
+
+  .contactFormStack {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .contactFormContainer {
+    width: 92vw;
+  }
+
+  .contactTitle {
+    font-size: clamp(2.75rem, 14vw, 4rem);
+    text-align: center;
+  }
+
+  .contactFormStack button {
+    width: 100%;
+  }
+}

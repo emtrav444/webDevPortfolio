@@ -11,15 +11,6 @@
 
 /* MODAL CONTENT */
 .modalContent {
-  width: min(90vw, 520px);
-  min-height: 320px;
-}
-
-/* MODAL BUTTONS */
-.modalCancelButton {
-  border: none;
-  background: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
+  width: min(92vw, 1050px);
+  min-height: 360px;
 }

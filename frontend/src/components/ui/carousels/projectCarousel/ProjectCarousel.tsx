@@ -6,6 +6,7 @@ import "./ProjectCarousel.css";
 
 /* define project type properties */
 type Project = {
+  id: string;
   title: string;
   description: string;
   image: string;
@@ -24,7 +25,10 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
   const projectsPerPage = 3;
   const totalPages = Math.ceil(projects.length / projectsPerPage);
   const startIndex = currentPage * projectsPerPage;
-  const visibleProjects = projects.slice(startIndex, startIndex + projectsPerPage);
+  const visibleProjects = projects.slice(
+    startIndex,
+    startIndex + projectsPerPage,
+  );
 
   return (
     /* begin carousel holder */
@@ -37,11 +41,14 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
       {/* begin carousel page tracker */}
       <Group className="projectCarouselDots" justify="center" gap="lg">
         {Array.from({ length: totalPages }).map((_, index) => (
-            <UnstyledButton key={index} className={`projectCarouselDot ${
-                currentPage === index ? "activeProjectCarouselDot" : ""
+          <UnstyledButton
+            key={index}
+            className={`projectCarouselDot ${
+              currentPage === index ? "activeProjectCarouselDot" : ""
             }`}
             onClick={() => setCurrentPage(index)}
-            aria-label={`go to project page ${index + 1}`} />
+            aria-label={`go to project page ${index + 1}`}
+          />
         ))}
       </Group>
       {/* end carousel page tracker */}
@@ -49,4 +56,3 @@ export default function ProjectCarousel({ projects }: ProjectCarouselProps) {
     /* end carousel holder */
   );
 }
-

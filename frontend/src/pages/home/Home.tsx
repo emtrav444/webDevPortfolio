@@ -20,7 +20,7 @@ export default function Home() {
             <Link className="homeLink" to="/about">
               about
             </Link>
-            <Link className="homeLink" to="/writing">
+            <Link className="homeLink" to="/projects">
               projects
             </Link>
           </Stack>

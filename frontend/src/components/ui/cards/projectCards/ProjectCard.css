@@ -4,6 +4,21 @@
   max-width: 400px;
   background-color: white;
   overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.projectCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.projectCardLink:hover .projectCard {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* CARD IMAGE */
@@ -59,8 +74,4 @@
   font-weight: 400;
   text-transform: lowercase;
   padding: 4px 8px;
-}
-
-.projectCardTag:hover {
-  background-color: aliceblue;
 }

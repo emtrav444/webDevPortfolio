@@ -19,16 +19,13 @@ export default function ModalOverlay({
 
   return (
     /* modal overlay */
-    <div className="modalOverlay">
-      <div className="modalContent">
+    <div className="modalOverlay" onClick={onClose}>
+      <div
+        className="modalContent"
+        onClick={(event) => event.stopPropagation()}>
         {/* modal content */}
         {children}
         {/* end modal content */}
-        {/* modal buttons */}
-        <button className="modalCancelBtn" type="button" onClick={onClose}>
-          cancel
-        </button>
-        {/* end modal buttons */}
       </div>
     </div>
     /* end overlay */
