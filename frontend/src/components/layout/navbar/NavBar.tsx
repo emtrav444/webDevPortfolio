@@ -2,6 +2,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import { Group } from "@mantine/core";
+import Logo from "../../../assets/logo/Logo";
 
 export default function NavBar() {
   return (
@@ -17,11 +18,13 @@ export default function NavBar() {
           </Link>
         </Group>
         {/* end page links */}
+
         {/* center logo */}
         <Link className="navLogo" to="/">
-          logo
+          <Logo />
         </Link>
         {/* end center logo */}
+
         {/* social links */}
         <Group gap="lg">
           <a
@@ -31,6 +34,7 @@ export default function NavBar() {
             rel="noopener noreferrer">
             twitter/x
           </a>
+
           <a
             className="navLink"
             href="https://letterboxd.com/emtrav111/"

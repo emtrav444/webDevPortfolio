@@ -12,7 +12,7 @@ export default function Home() {
           {/* left side: title */}
           <div className="homeLeft">
             <Title order={1} className="homeTitle">
-              header
+    my title.
             </Title>
 
             {/* subtitle */}
@@ -26,11 +26,11 @@ export default function Home() {
           {/* right side: links */}
           <Stack gap="sm" className="homeSideLinks">
             <Link className="homeSideLink" to="/about">
-              ABOUT LINK
+              ABOUT ME
             </Link>
 
             <Link className="homeSideLink" to="/projects">
-              PROJECTS LINK
+             MY PROJECTS 
             </Link>
           </Stack>
           {/* end right side */}

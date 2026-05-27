@@ -1,35 +1,184 @@
 /* NAV BAR WRAP */
 .navWrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 16px 24px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
 }
 
 .navWrapper > :first-child {
-    justify-self: start;
+  justify-self: start;
 }
 
 .navWrapper > :last-child {
-    justify-self: end;
+  justify-self: end;
 }
 
 /* CENTRAL LOGO */
 .navLogo {
-    justify-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+}
+
+.logoSvg {
+  display: block;
+  width: 62px;
+  height: 62px;
+  overflow: visible;
+}
+
+/* LOGO-SPECIFIC ANIMATIONS */
+
+.logoSvg {
+  transform-origin: center;
+}
+
+.logoSvg.loaded {
+  animation: logoJelloHorizontal 0.65s both 1.55s;
+}
+
+.navLogo:hover .logoSvg {
+  animation: logoJelloHorizontalHover 0.65s both;
+}
+
+.logoCircleGroup,
+.logoLetterGroup,
+.logoExclamationGroup {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.logoCircleGroup {
+  animation: logoBounceInTop 0.75s both;
+}
+
+.logoLetterGroup {
+  animation: logoBounceInTop 0.72s both 0.42s;
+}
+
+.logoExclamationGroup {
+  animation: logoBounceInTop 0.68s both 0.78s;
+}
+
+@keyframes logoBounceInTop {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes logoJelloHorizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes logoJelloHorizontalHover {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /* LINKS */
 .navLink {
-    text-decoration:none;
-    color:inherit;
-    font-size: 0.8rem;
-    letter-spacing: none;
-    text-transform: lowercase;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: lowercase;
 }
 
 .navLink:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }

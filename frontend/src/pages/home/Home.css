@@ -28,26 +28,26 @@
 
 /* HOME PAGE: TITLE */
 .homeTitle {
-  font-size: clamp(6rem, 12vw, 10rem);
-  font-weight: 400;
+  font-size: clamp(6rem, 12vw, 15rem) !important;
+  font-weight: 900 !important;
   line-height: 0.9;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.06em;
   margin: 0;
   color: var(--night-sky);
 }
 
 /* HOME PAGE: LINKS */
 .homeSideLinks {
-  margin-top: 0px;
-  line-height: 1;
+  margin-top: 3%;
+  line-height: .85;
 }
 
 .homeSideLink {
   text-decoration: none;
   color: var(--foxglove);
-  font-weight: bold;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.85rem;
+  text-transform: lowercase;
   transition: opacity 0.2s ease;
 }
 
@@ -57,10 +57,10 @@
 
 /* HOME PAGE: SUBTITLE */
 .homeSubtitle {
-  margin-top: 32px;
-  margin-left: 8px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
+  transform: translateX(46px) translateY(25px);
+  font-size: 0.75rem !important;
+  text-transform: lowercase;
+  font-weight: 300;
   color: var(--text);
 }
 
