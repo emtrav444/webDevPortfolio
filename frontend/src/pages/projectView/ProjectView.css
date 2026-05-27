@@ -49,6 +49,9 @@
 /* PROJECT DISPLAY CONTAINER: PROJECT BUTTONS */
 .projectViewBtns {
   margin-top: 8px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .projectViewBtn {
@@ -90,10 +93,11 @@
   .projectViewContent {
     max-width: 620px;
     margin: 0 auto;
+    align-items: center;
   }
 
   .projectViewBtns {
-    justify-content: center;
+    width: 100%;
   }
 }
 

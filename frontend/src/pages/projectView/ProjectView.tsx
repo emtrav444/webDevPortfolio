@@ -82,9 +82,11 @@ export default function ProjectView() {
         </Title>
         {/* end title */}
 
-        {/* begin subtitle */}
-        <Text className="projectViewSubtitle">{project.subtitle}</Text>
-        {/* end subtitle */}
+        {/* begin back btn */}
+        <Button component={Link} to="/projects" className="projectViewBtn">
+          back to projects.
+        </Button>
+        {/* end back btn */}
       </Container>
       {/* end project title section */}
     </Box>

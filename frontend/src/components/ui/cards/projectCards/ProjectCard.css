@@ -2,8 +2,11 @@
 .projectCard {
   width: 100%;
   max-width: 400px;
+  height: 100%;
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -14,6 +17,7 @@
   color: inherit;
   display: block;
   cursor: pointer;
+  height: 100%;
 }
 
 .projectCardLink:hover .projectCard {
@@ -50,6 +54,7 @@
 /* CARD DESCRIPTION SECTION */
 .projectCardDescSection {
   padding: 14px 44px;
+  flex-grow: 1;
 }
 
 .projectCardDesc {
@@ -65,6 +70,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: auto;
 }
 
 /* CARD TAGS */

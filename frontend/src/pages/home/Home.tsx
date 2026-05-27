@@ -1,37 +1,41 @@
 /* IMPORTS */
-import { Container, Grid, Title, Stack, Text } from "@mantine/core";
+import { Container, Title, Stack, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 export default function Home() {
   return (
-    <Container size="lg">
+    <Container size="xl" className="homeContainer">
       {/* hero */}
-      <Grid align="center" my="xl">
-        {/* left side: title */}
-        <Grid.Col span={{ base: 12, md: 6 }}>
-          <Title order={1} className="homeTitle">
-            title
-          </Title>
+      <section className="homeHero">
+        <div className="homeCluster">
+          {/* left side: title */}
+          <div className="homeLeft">
+            <Title order={1} className="homeTitle">
+              header
+            </Title>
+
+            {/* subtitle */}
+            <Text className="homeSubtitle">
+              HEADER SUBTITLE INFORMATION HERE
+            </Text>
+            {/* end subtitle */}
+          </div>
           {/* end left side */}
-        </Grid.Col>
-        {/* right side: sides */}
-        <Grid.Col span={{ base: 12, md: 6 }}>
-          <Stack align="flex-start" gap="md">
-            <Link className="homeLink" to="/about">
-              about
+
+          {/* right side: links */}
+          <Stack gap="sm" className="homeSideLinks">
+            <Link className="homeSideLink" to="/about">
+              ABOUT LINK
             </Link>
-            <Link className="homeLink" to="/projects">
-              projects
+
+            <Link className="homeSideLink" to="/projects">
+              PROJECTS LINK
             </Link>
           </Stack>
           {/* end right side */}
-        </Grid.Col>
-      </Grid>
-      {/* subtitle */}
-      <Text size="sm" my="xl" className="homeSubtitle">
-        subtitle text here.
-      </Text>
-      {/* end subtitle */}
+        </div>
+      </section>
       {/* end hero */}
     </Container>
   );

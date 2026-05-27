@@ -9,6 +9,11 @@
 /* CAROUSEL HOLDER */
 .projectCarousel .mantine-SimpleGrid-root {
   width: 100%;
+  align-items: stretch;
+}
+
+.projectCarousel .mantine-SimpleGrid-root > * {
+  height: 100%;
 }
 
 /* CAROUSEL DOTS CONTAINER */

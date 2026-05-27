@@ -13,10 +13,13 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <MantineProvider
-        defaultColorScheme="dark"
+        defaultColorScheme="light"
         theme={{
-          primaryColor: "blue",
-          fontFamily: "Inter, sans-serif",
+          primaryColor: "pink",
+          fontFamily: "montserrat, sans-serif",
+          headings: {
+            fontFamily: "montserrat-alternates, sans-serif",
+          },
         }}>
         <Notifications />
         <App />
