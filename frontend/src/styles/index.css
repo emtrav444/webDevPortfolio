@@ -2,7 +2,7 @@
   /* MAIN COLORS */
   --text: #171717;
   --text-h: #2a2a36;
-  --bg: #ededec;
+  --bg: #fafafa;
 
   /* SUPPORTING COLORS */
   --border: #d6d6cf;
@@ -28,6 +28,7 @@
   --sans: "montserrat", sans-serif;
   --heading: "montserrat-alternates", sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --code: "fira-code", sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -75,6 +76,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--bg);
 }
 
 *,

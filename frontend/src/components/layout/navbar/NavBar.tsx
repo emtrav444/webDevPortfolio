@@ -9,7 +9,7 @@ export default function NavBar() {
     <header>
       <div className="navWrapper">
         {/* page links */}
-        <Group gap="lg">
+        <Group gap="lg" className="navLeftLinks">
           <Link className="navLink" to="/projects">
             projects
           </Link>
@@ -19,14 +19,22 @@ export default function NavBar() {
         </Group>
         {/* end page links */}
 
+        {/* left deco line */}
+        <span className="navLine navLineLeft" />
+        {/* end left deco line */}
+
         {/* center logo */}
         <Link className="navLogo" to="/">
           <Logo />
         </Link>
         {/* end center logo */}
 
+        {/* right deco line */}
+        <span className="navLine navLineRight" />
+        {/* end right deco line */}
+
         {/* social links */}
-        <Group gap="lg">
+        <Group gap="lg" className="navRightLinks">
           <a
             className="navLink"
             href="https://x.com/realemtrav444"

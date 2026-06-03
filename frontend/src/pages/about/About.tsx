@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Container, Grid, Title, Text, Stack, Button } from "@mantine/core";
 import ModalOverlay from "../../components/ui/modal/ModalOverlay";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "../../components/ui/contactForm/ContactForm";
 import "./About.css";
 
 export default function About() {
